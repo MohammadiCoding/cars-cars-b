@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Locations - Melbourne Cash for Cars</title>
+    <meta name="description" content="Discover our locations across Brisbane. Melbourne Cash for Cars offers top cash for cars with free removal services. Find the nearest location and get a free quote today!">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .navbar-brand img {
+            height: 40px;
+        }
+
+        header .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .location-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .location-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .location-card-body {
+            padding: 20px;
+        }
+
+        .location-card h4 {
+            color: #007bff;
+        }
+
+        .map-container {
+            position: relative;
+            height: 400px;
+            margin: 40px 0;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .hero-text h1 {
+            color: #007bff;
+        }
+
+        .hero-text p {
+            color: #555;
+        }
+
+        .footer {
+            background: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .footer .footer-logo img {
+            height: 50px;
+        }
+
+        .footer h5 {
+            color: #fff;
+        }
+
+        .footer a {
+            color: #f8f9fa;
+        }
+
+        .footer a:hover {
+            color: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="logo.png" alt="Melbourne Cash for Cars Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="CFAC.html">Cash for Any Cars</a>
+                            <a class="dropdown-item" href="FR.html">Free Car Removal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cashForCarsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cash for Cars
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="cashForCarsDropdown">
+                            <a class="dropdown-item" href="CFAC.html">Cash for Any Cars</a>
+                            <a class="dropdown-item" href="CFAC.html">Top Cash for Cars</a>
+                            <a class="dropdown-item" href="CFAC.html">Instant Quote</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="About.html">About Us</a>
+                            <a class="dropdown-item" href="Contact.html">Contact Page</a>
+                            <a class="dropdown-item" href="mailto:[Your Email Address]">Why Choose Us?</a>
+                            <a class="dropdown-item" href="#">Cash for Cars Melbourne</a>
+                            <a class="dropdown-item" href="#">Locations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quote-form" class="btn btn-outline-success btn-sm">Get a Free Quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-dark btn-sm" onclick="callOwner()">+93 791559254</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="locations py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="hero-text text-center mb-5">
+                <h1>Our Locations in Brisbane</h1>
+                <p>We proudly serve various locations across Brisbane. Find the nearest one to you and get top cash for your car with our hassle-free service!</p>
+            </div>
+            <div class="row">
+                <!-- Location 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="location-card">
+                        <img src="Images/Brisbane-Location1.jpg" alt="Brisbane CBD Location">
+                        <div class="location-card-body">
+                            <h4 class="card-title">Brisbane CBD</h4>
+                            <p class="card-text">1 Queen St, Brisbane, QLD 4000</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+61712345678">+61 7 1234 5678</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="location-card">
+                        <img src="Images/Brisbane-Location2.jpg" alt="Fortitude Valley Location">
+                        <div class="location-card-body">
+                            <h4 class="card-title">Fortitude Valley</h4>
+                            <p class="card-text">123 Wickham St, Fortitude Valley, QLD 4006</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+61723456789">+61 7 2345 6789</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="location-card">
+                        <img src="Images/Brisbane-Location3.jpg" alt="South Brisbane Location">
+                        <div class="location-card-body">
+                            <h4 class="card-title">South Brisbane</h4>
+                            <p class="card-text">456 Stanley St, South Brisbane, QLD 4101</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+61734567890">+61 7 3456 7890</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="location-card">
+                        <img src="Images/Brisbane-Location4.jpg" alt="West End Location">
+                        <div class="location-card-body">
+                            <h4 class="card-title">West End</h4>
+                            <p class="card-text">789 Boundary St, West End, QLD 4101</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+61745678901">+61 7 4567 8901</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="location-card">
+                        <img src="Images/Brisbane-Location5.jpg" alt="Indooroopilly Location">
+                        <div class="location-card-body">
+                            <h4 class="card-title">Indooroopilly</h4>
+                            <p class="card-text">101 Moggill Rd, Indooroopilly, QLD 4068</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+61756789012">+61 7 5678 9012</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.081295568377!2d153.02809031531787!3d-27.47093078389126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915baf715ac0bb%3A0x74c357db6cf1a002!2sBrisbane%20City%2C%20QLD%204000%2C%20Australia!5e0!3m2!1sen!2sus!4v1671725506992!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-left">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Melbourne Cash for Cars Logo">
+                    </div>
+                    <p>© 2024 Melbourne Cash for Cars. All rights reserved.</p>
+                </div>
+                <div class="col-md-3 text-center text-md-left">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="CFAC.html">Cash for Any Cars</a></li>
+                        <li><a href="FR.html">Free Car Removal</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center text-md-left">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Melbourne, VIC, Australia<br>
+                        <i class="fas fa-phone"></i> <a href="tel:+93791559254">+93 791559254</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:[Your Email Address]">[Your Email Address]</a>
+                    </p>
+                </div>
+                <div class="col-md-3 text-center text-md-left">
+                    <h5>Stay Connected</h5>
+                    <div class="social-icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                    <h5 class="mt-4">Subscribe to Our Newsletter</h5>
+                    <form action="/subscribe" method="POST" class="subscription-form">
+                        <input type="email" class="form-control mb-2" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        function callOwner() {
+            window.location.href = 'tel:+61712345678';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Cash for Cars - Get Top Cash for Your Car!</title>
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS - JS/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+    <!-- Local FontAwesome CSS -->
+    <link rel="stylesheet" href="Icon/fontawesome-free-6.5.2-web/css/all.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+        body {
+            padding-top: 70px; /* Offset for fixed navbar */
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-custom {
+            background: #00332a; /* Darker green for navbar background */
+            border-bottom: 3px solid #004d40; /* Slightly darker border */
+        }
+        .navbar-custom .navbar-brand {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #b2dfdb; /* Slightly lighter for hover effect */
+        }
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"%3E%3Cpath stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" /%3E%3C/svg%3E');
+        }
+        .hero-section {
+            background: url('path/to/your/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Darker overlay for more contrast */
+            z-index: 1;
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-top: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Darker shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4); /* Darker shadow on hover */
+        }
+        .btn-custom {
+            background-color: #004d40; /* Darker green */
+            color: #fff;
+            border-radius: 25px;
+            padding: 12px 24px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #00332a; /* Even darker green for hover */
+        }
+        footer {
+            background-color: #001f1a; /* Darker background for footer */
+            color: #b2dfdb;
+        }
+        footer a {
+            color: #b2dfdb;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+        footer .list-unstyled li {
+            margin-bottom: 10px;
+        }
+        footer .list-inline-item a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer .list-inline-item a:hover {
+            color: #ffffff;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+        .btn-outline-success, .btn-outline-dark {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+     <header class="bg-light py-3 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="/">
+                <img src="logo.png" alt="Melbourne Cash for Cars Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- Dropdown for services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item active" href="#">Cash for Any Cars</a>
+                            <a class="dropdown-item" href="FR.html">Free Car Removal</a>
+                            <!-- Add more services as needed -->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <!-- Dropdown for contact -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="About.html">About Us</a>
+                            <a class="dropdown-item" href="Contact.html">Contact Page</a>
+                            <a class="dropdown-item" href="mailto:[Your Email Address]">Why Choose Us?</a>
+                            <a class="dropdown-item" href="#">Cash for Cars Melbourne</a>
+                            <a class="dropdown-item" href="#">Locations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quote-form" class="btn btn-outline-success btn-sm">Get a Free Quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tel:+93791559254" class="btn btn-outline-light btn-sm">+93 791559254</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Cash for Any Cars</h1>
+            <p>Get top cash for your car, no matter its condition. Fast, easy, and hassle-free!</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <h2 class="mb-4">Why Choose Us?</h2>
+                    <p>We offer fast and easy cash for any cars, regardless of their condition. Whether your car is old, damaged, or simply unwanted, we provide top dollar for it.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle"></i> Fast and easy process</li>
+                        <li><i class="fas fa-check-circle"></i> Top dollar for your vehicle</li>
+                        <li><i class="fas fa-check-circle"></i> Free car removal service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <h2 class="mb-4">How It Works</h2>
+                    <p>Follow these simple steps to get cash for your car:</p>
+                    <ol>
+                        <li>Contact us for a free, no-obligation quote.</li>
+                        <li>We’ll schedule a convenient time for car inspection.</li>
+                        <li>Receive cash on the spot and we’ll handle the removal.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card p-4">
+                    <h2 class="mb-4">Get Your Free Quote</h2>
+                    <form action="https://www.bestcashforcarsbrisbane.com.au/" method="post">
+                        <div class="form-group">
+                            <label for="make">Make:</label>
+                            <select class="form-control" id="make" name="make" required>
+                                <option value="" disabled selected>Select Make</option>
+                                <!-- Options omitted for brevity -->
+                                <option value="Acura">Acura</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Model:</label>
+                            <input type="text" class="form-control" id="model" name="model" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year:</label>
+                            <input type="number" class="form-control" id="year" name="year" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Condition:</label>
+                            <select class="form-control" id="condition" name="condition" required>
+                                <option value="unwanted cars">Unwanted Cars</option>
+                                <option value="Old cars">Old Cars</option>
+                                <option value="Fair">Scrap Cars</option>
+                                <option value="Poor">Junk Cars</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mileage">Mileage:</label>
+                            <input type="number" class="form-control" id="mileage" name="mileage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Your Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Your Address:</label>
+                            <input type="text" class="form-control" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email (Optional):</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <button type="submit" class="btn btn-custom btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-light">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt text-light mr-2"></i> [Your Address]</li>
+                        <li><i class="fas fa-phone-alt text-light mr-2" style="color: #004d40;"></i> [Your Phone Number]</li>
+                        <li><i class="fas fa-envelope text-light mr-2"></i> <a href="mailto:[Your Email Address]" class="text-light">[Your Email Address]</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-light">Business Hours</h5>
+                    <ul class="list-unstyled" style="color: #b2dfdb;">
+                        <li>Monday - Friday: 08:30 - 17:00</li>
+                        <li>Saturday: 09:00 - 13:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-light">Follow Us</h5>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center py-3">
+                    <p class="text-light">© 2024 Melbourne Cash for Cars. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Local Popper.js -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <!-- Local Bootstrap JS -->
+     <script src="CSS - JS/js/bootstrap.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
