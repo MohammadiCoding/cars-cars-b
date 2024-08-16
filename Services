@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Cash for Cars - Get Top Cash for Your Car!</title>
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS - JS/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Local FontAwesome CSS -->
+    <link rel="stylesheet" href="Icon/fontawesome-free-6.5.2-web/css/all.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+
+    <header class="bg-light py-3" style="position: fixed; top: 0px; z-index: 10; width: 100%;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/">
+                    <img src="logo.png" alt="Melbourne Cash for Cars Logo" height="40"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item">
+                            <a href="#quote-form" class="btn btn-outline-success btn-sm">Get a Free Quote</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark btn-sm" onclick="callOwner()">+93 791559254</button> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero py-10" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Images/pexels-mikebirdy-943930.jpg" alt="Tow truck removing a car" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h2 class="display-4 mb-4">Get Top Cash for Your Car in Melbourne - Free Removal!</h2>
+                        <p class="lead">We buy any car, any condition! Get a free quote now!</p>
+                        <div class="mt-4">
+                            <a href="#quote-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <section class="benefits bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose Melbourne Cash for Cars?</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Top cash.jpg" alt="Cash" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Top Cash Prices</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Removal.jpg" alt="Tow Truck" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Free Car Removal</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/No hassle.jpg" alt="Clock" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">No Hassle, Quick Process</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/any car.jpg" alt="Car" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Any Car Accepted</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="Images/Cash-For-Scrap-Cars.webp" alt="Cash for Cars" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Cash for Cars</h3>
+                            <p class="card-text">Get top cash for your unwanted car. We buy any car, any condition. </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Free car removal</li>
+                                <li class="list-group-item">Fast and easy process</li>
+                                <li class="list-group-item">Competitive prices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="Images/Free-Car-Removal-in-Epping-Area.jpg" alt="Car Removal" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Car Removal</h3>
+                            <p class="card-text">Free car removal throughout Melbourne. We handle all the paperwork and logistics.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Same-day removal available</li>
+                                <li class="list-group-item">No hidden fees</li>
+                                <li class="list-group-item">Environmentally responsible disposal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">We Accept All Makes & Models</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-car fa-3x"></i>
+                            <h5 class="card-title">Popular Brands</h5>
+                            <p class="card-text">From Toyota to Holden, we accept a wide range of popular car brands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-truck fa-3x"></i>
+                            <h5 class="card-title">Trucks & SUVs</h5>
+                            <p class="card-text">We also accept trucks, SUVs, and 4x4s, no matter their condition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-wrench fa-3x"></i>
+                            <h5 class="card-title">Any Condition</h5>
+                            <p class="card-text">Damaged, old, or written off? We take it all! Get a free quote today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="quote-form" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Get Your Free Quote</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-center">Tell Us About Your Car</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="https://www.bestcashforcarsbrisbane.com.au/" method="post">
+                                <div class="form-group">
+                                    <label for="make">Make:</label>
+                                    <select class="form-control" id="make" name="make" required>
+                                        <option value="" disabled selected>Select Make</option>
+                                        <option value="Acura">Acura</option>
+                                        <option value="Alfa Romeo">Alfa Romeo</option>
+                                        <option value="Aston Martin">Aston Martin</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Buick">Buick</option>
+                                        <option value="Cadillac">Cadillac</option>
+                                        <option value="Chevrolet">Chevrolet</option>
+                                        <option value="Chrysler">Chrysler</option>
+                                        <option value="Citroen">Citroen</option>
+                                        <option value="Dodge">Dodge</option>
+                                        <option value="Fiat">Fiat</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Genesis">Genesis</option>
+                                        <option value="GMC">GMC</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Infiniti">Infiniti</option>
+                                        <option value="Jaguar">Jaguar</option>
+                                        <option value="Jeep">Jeep</option>
+                                        <option value="Kia">Kia</option>
+                                        <option value="Lamborghini">Lamborghini</option>
+                                        <option value="Land Rover">Land Rover</option>
+                                        <option value="Lexus">Lexus</option>
+                                        <option value="Lincoln">Lincoln</option>
+                                        <option value="Maserati">Maserati</option>
+                                        <option value="Mazda">Mazda</option>
+                                        <option value="McLaren">McLaren</option>
+                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                        <option value="Mini">Mini</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Pagani">Pagani</option>
+                                        <option value="Peugeot">Peugeot</option>
+                                        <option value="Porsche">Porsche</option>
+                                        <option value="Ram">Ram</option>
+                                        <option value="Rolls-Royce">Rolls-Royce</option>
+                                        <option value="Saab">Saab</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Suzuki">Suzuki</option>
+                                        <option value="Tesla">Tesla</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Volvo">Volvo</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="model">Model:</label>
+                                    <input type="text" class="form-control" id="model" name="model" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="year">Year:</label>
+                                    <input type="text" class="form-control" id="year" name="year" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="condition">Condition:</label>
+                                    <select class="form-control" id="condition" name="condition" required>
+                                        <option value="Excellent">Excellent</option>
+                                        <option value="Good">Good</option>
+                                        <option value="Fair">Fair</option>
+                                        <option value="Poor">Poor</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mileage">Mileage:</label>
+                                    <input type="text" class="form-control" id="mileage" name="mileage" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Your Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Your Address:</label>
+                                    <input type="text" class="form-control" id="address" name="address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email (Optional):</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <h5 class="text-light">Contact Information</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt text-light mr-2" ></i> [Your Address]</li>
+                <li><i class="fas fa-phone-alt text-light mr-2" style="color: rgb(28, 106, 174);"></i> [Your Phone Number]</li>
+                <li><i class="fas fa-envelope text-light mr-2"></i> <a href="mailto:[Your Email Address]" class="text-light">[Your Email Address]</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h5 class="text-light">Business Hours</h5>
+              <ul class="list-unstyled" style="color: rgb(50, 96, 96);">
+                <li>Monday - Friday: 08:30 - 17:00</li>
+                <li>Saturday: 09:00 - 13:00</li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h5 class="text-light">Follow Us</h5>
+              <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="#" class="text-primary"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-primary"><i class="fab fa-twitter fa-lg"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-primary"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="" style="color: red;"><i class="fab fa-instagram fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center py-3">
+              <p class="text-light">&copy; 2024 Melbourne Cash for Cars. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
